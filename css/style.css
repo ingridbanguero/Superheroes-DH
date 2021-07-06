@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.preheader{
+    background-color: #1CD1B0;
+}
+.preheader p{
+    color: #000000;
+    padding: 2px 0px 3px 20px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+}
+.header h1{
+    color: #fff;
+    font-weight: 700;
+}
+.header img{
+    padding: 3px 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 380px;
+    margin: auto;
+    width: 80%;
+    height: calc(100vh - 104px - 53px);
+}
+main h2{
+    font-weight: 700;
+    font-size: 52px;
+    color: #333;
+    margin-bottom: 25px;
+}
+main form{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+main form input[type=text],
+main form input[type=password],
+main form input[type=email]
+{
+    margin: 5px 0px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Karla', sans-serif;
+    padding: 6px 0px 6px 16px;
+    width: 100%;
+}
+main form input::placeholder{
+    font-size: 14px;
+    color: #000;
+    font-family: 'Karla', sans-serif;
+}
+
+main form input[type=submit]{
+    background-color: #1CD1B0;
+    color: #000;
+    border-radius: 25px;
+    padding: 5px 0px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+main .register input[type=submit],
+main .register input[type=reset]{
+    border-radius: 25px;
+    margin-top: 15px;
+    padding: 5px 0px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+main .register input[type=submit]{
+    background-color: #1CD1B0;
+    color: #000;
+}
+main .register input[type=reset]{
+    background-color: #888;
+    color: #fff;
+}
+main form div{
+    width: 100%;
+    display: flex;
+}
+main form div input{
+    width: 50%;
+    margin: 0px 5px;
+}
+main form p{
+    color: #000;
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+main form p span{
+    color: #00669F;
+    font-family: 'Karla', sans-serif;
+}
+main form p a{
+    color: #000;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+footer{
+    background-color: #00669F;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    padding: 21px;
+    font-size: 10px;
+}
+
+@media (min-width: 768px) {
+    main form input[type=text],
+    main form input[type=password],
+    main form input[type=email],
+    main .register input[type=reset],
+    main .register input[type=submit]{
+        padding: 10px 0px 10px 16px;
+    }
+    main form input[type=submit]{
+        padding: 10px 0px;
+    }
+}
